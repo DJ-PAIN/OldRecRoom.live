@@ -1,3 +1,7 @@
+
+var imgURL = "https://oldrecroom.github.io/img/"
+var videoURL = "https://oldrecroom.github.io/CDN/Video/"
+
 var video1
 var video2
 var video3
