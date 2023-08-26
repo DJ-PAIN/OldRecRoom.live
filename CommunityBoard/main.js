@@ -7,6 +7,10 @@ var video1
 var video2
 var video3
 
+var videoIMG1
+var videoIMG2
+var videoIMG3
+
 var Title1
 var Title2
 var Title3
@@ -28,6 +32,10 @@ function UpdateVideos() {
     titleele1.innerHTML = Title1
     titleele2.innerHTML = Title2
     titleele3.innerHTML = Title3
+
+    videoele1.poster = videoIMG1
+    videoele2.poster = videoIMG2
+    videoele3.poster = videoIMG3
     
     videoele1.src = video1
     videoele2.src = video2
@@ -39,6 +47,10 @@ function GetVideos() {
         video1 = videoURL + response.Videos[0].BlobName
         video2 = videoURL + response.Videos[1].BlobName
         video3 = videoURL + response.Videos[2].BlobName
+
+        videoIMG1 = imgURL + response.Videos[0].ThumbnailBlobName
+        videoIMG2 = imgURL + response.Videos[1].ThumbnailBlobName
+        videoIMG3 = imgURL + response.Videos[2].ThumbnailBlobName
 
         Title1= response.Videos[0].Title
         Title2 = response.Videos[1].Title
