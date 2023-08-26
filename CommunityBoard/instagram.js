@@ -51,7 +51,7 @@ function UpdateVideos() {
 
 }
 
-function GetVideos() {
+function GetInstagram() {
     f = fetch(communityBoardURL,).then((a)=>{a.json().then((response) => {
         instagram1 = imgURL + response.InstagramImages[0].ImageName
         instagram2 = imgURL + response.InstagramImages[1].ImageName
