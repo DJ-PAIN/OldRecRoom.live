@@ -30,10 +30,10 @@ function UpdateVideos() {
 }
 
 function GetVideos() {
-    f = fetch("https://recroom2019.github.io/CommunityBoard.json",).then((a)=>{a.json().then((response) => {
-        video1 = response.Videos[0].BlobName
-        video2 = response.Videos[1].BlobName
-        video3 = response.Videos[2].BlobName
+    f = fetch("https://oldrecroom.github.io/API-test/CommunityBoard.json",).then((a)=>{a.json().then((response) => {
+        video1 = "https://oldrecroom.github.io/CDN/Video/" + response.Videos[0].BlobName
+        video2 = "https://oldrecroom.github.io/CDN/Video/" + response.Videos[1].BlobName
+        video3 = "https://oldrecroom.github.io/CDN/Video/" + response.Videos[2].BlobName
 
         Title1= response.Videos[0].Title
         Title2 = response.Videos[1].Title
