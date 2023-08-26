@@ -50,6 +50,6 @@ function GetRoom() {
         room2 = response.FeaturedRooms[1].RoomName
         room3 = response.FeaturedRooms[2].RoomName
         console.log("Done")
-        UpdateVideos()
+        UpdateRoom()
     })})
 }
