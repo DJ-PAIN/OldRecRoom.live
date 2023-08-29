@@ -1,5 +1,5 @@
 
-const communityBoardURL = "https://oldrecroom.github.io/API-test/CommunityBoard.json"
+const communityBoardURL = "https://oldrecroom.github.io/API/CommunityBoard.json"
 const imgURL = "https://oldrecroom.github.io/img/"
 const videoURL = "https://oldrecroom.github.io/CDN/Video/"
 
