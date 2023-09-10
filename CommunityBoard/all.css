@@ -4,11 +4,17 @@ body{
 
 video{
     border-radius: 25px;
+    padding: 30px;
+}
+
+.img{
+    border-radius: 50px;
+    padding: 20px;
 }
 
 .text{
     color: white
-}
+}o
 
 .MoreInfo{
     width: 300px;
