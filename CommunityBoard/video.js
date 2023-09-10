@@ -1,6 +1,6 @@
 
 const apiURL = "https://api.oldrecroom.com/"
-const imgURL = "https://img.oldrecroom/"
+const imgURL = "https://img.oldrecroom.com/"
 const videoURL = "https://cdn.oldrecroom.com/Video/"
 
 var video1
