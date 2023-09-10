@@ -1,6 +1,6 @@
 
-const communityBoardURL = "https://oldrecroom.github.io/API-test/CommunityBoard.json"
-const imgURL = "https://oldrecroom.github.io/img/"
+const apiURL = "https://api.oldrecroom.com"
+const imgURL = "https://img.oldrecroom.com"
 
 
 
@@ -52,7 +52,7 @@ function UpdateVideos() {
 }
 
 function GetInstagram() {
-    f = fetch(communityBoardURL,).then((a)=>{a.json().then((response) => {
+    f = fetch(apiURL + "CommunityBoard.json",).then((a)=>{a.json().then((response) => {
         instagram1 = imgURL + response.InstagramImages[0].ImageName
         instagram2 = imgURL + response.InstagramImages[1].ImageName
         instagram3 = imgURL + response.InstagramImages[2].ImageName
