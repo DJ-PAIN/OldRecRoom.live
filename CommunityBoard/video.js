@@ -1,7 +1,7 @@
 
-const communityBoardURL = "https://oldrecroom.github.io/API/CommunityBoard.json"
-const imgURL = "https://oldrecroom.github.io/img/"
-const videoURL = "https://oldrecroom.github.io/CDN/Video/"
+const apiURL = "https://api.oldrecroom.com/"
+const imgURL = "https://img.oldrecroom/"
+const videoURL = "https://cdn.oldrecroom.com/Videos/"
 
 var video1
 var video2
@@ -43,7 +43,7 @@ function UpdateVideos() {
 }
 
 function GetVideos() {
-    f = fetch(communityBoardURL,).then((a)=>{a.json().then((response) => {
+    f = fetch(apiURL + "CommunityBoard.json",).then((a)=>{a.json().then((response) => {
         video1 = videoURL + response.Videos[0].BlobName
         video2 = videoURL + response.Videos[1].BlobName
         video3 = videoURL + response.Videos[2].BlobName
