@@ -1,6 +1,6 @@
 
-const apiURL = "https://api.oldrecroom.com"
-const imgURL = "https://img.oldrecroom.com"
+const apiURL = "https://api.oldrecroom.com/"
+const imgURL = "https://img.oldrecroom.com/"
 
 
 
